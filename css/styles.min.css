@@ -66,19 +66,19 @@ h5 {
 }
 .btn-fill {
   color: #fff;
-  border: solid 2px #e8ca6f;
+  border: solid 2px #282928;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #e8ca6f;
+  background-color: #282928;
 }
 .btn-fill:hover,
 .btn-fill:focus {
   color: #fff;
-  background-color: #d3b56a;
-  border-color: #d3b56a;
+  background-color: #464746;
+  border-color: #464746;
 }
 .btn-small {
   padding: 8px 30px;
