@@ -270,28 +270,30 @@ $(document).ready(function () {
         )
       );
     } else {
-      $.post(
-        "https://script.google.com/macros/s/AKfycbyb3uGE6mE8hkf3_7QmUdDSZxHiwfujhqLwATM_5S8LSoyX8gcujPRDYoZMX93sAK9E/exec",
-        data
-      )
-        .done(function (data) {
-          console.log(data);
-          if (data.result === "error") {
-            $("#alert-wrapper").html(alert_markup("danger", data.message));
-          } else {
-            $("#alert-wrapper").html("");
-            $("#rsvp-modal").modal("show");
-          }
-        })
-        .fail(function (data) {
-          console.log(data);
-          $("#alert-wrapper").html(
-            alert_markup(
-              "danger",
-              "<strong>Sorry!</strong> There is some issue with the server. "
-            )
-          );
-        });
+      $("#alert-wrapper").html("");
+      $("#rsvp-modal").modal("show");
+      // $.post(
+      //   "https://script.google.com/macros/s/AKfycbyb3uGE6mE8hkf3_7QmUdDSZxHiwfujhqLwATM_5S8LSoyX8gcujPRDYoZMX93sAK9E/exec",
+      //   data
+      // )
+      //   .done(function (data) {
+      //     console.log(data);
+      //     if (data.result === "error") {
+      //       $("#alert-wrapper").html(alert_markup("danger", data.message));
+      //     } else {
+      //       $("#alert-wrapper").html("");
+      //       $("#rsvp-modal").modal("show");
+      //     }
+      //   })
+      //   .fail(function (data) {
+      //     console.log(data);
+      //     $("#alert-wrapper").html(
+      //       alert_markup(
+      //         "danger",
+      //         "<strong>Sorry!</strong> There is some issue with the server. "
+      //       )
+      //     );
+      //   });
     }
   });
 });
