@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.landing-bg {
+  background-image: url("../img/hero-3.jpg");
+  background-position: center;
+}
+
+.landing-card-body {
+  height: 650px;
+}
+
+.clickable {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.clickable:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.landing-btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn {
+  font-family: "Roboto";
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #dac191;
+  border-color: #dac191;
+}
+
+.landing-btn-small {
+  padding: 16px 48px;
+}
+
+.landing-btn-white {
+  font-size: 2.5rem;
+  border: solid 2px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 60px;
+  display: inline-block;
+  border-color: #fff;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+}
+.landing-btn-white:hover,
+.landing-btn-white:focus {
+  color: #e8ca6f;
+  border-color: #e8ca6f;
+}
+.landing-btn-primary {
+  color: #fff;
+  background-color: #dac191;
+  border-color: #dac191;
+}
+
+.landing-btn:hover {
+  color: yellow;
+}
+
+.landing-btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 2.25rem;
+}
